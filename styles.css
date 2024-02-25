@@ -1,0 +1,16 @@
+.headerImg{
+    position: relative;
+    width: 400px;
+}
+header{
+    position: absolute;
+    top: 25%;
+    text-align: center;
+}
+body{
+    margin: 0;
+    padding: 0;
+}
+img{
+    max-width: 400px;
+}

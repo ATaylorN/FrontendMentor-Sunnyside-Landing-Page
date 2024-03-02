@@ -1,3 +1,39 @@
+.bottomImgs{
+    display: flex;
+}
+.bottomImgs img{
+    max-width: 25vw;
+}
+.client{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    margin-bottom: 5em;
+}
+.reviewsgroup{
+    display: flex;
+    justify-content:center;
+    margin: 3em 0;
+    gap: 50px;
+}
+.review p{
+    max-width: 35ch;
+}
+.review img {
+    border-radius: 70px;
+    max-width: 100px;
+    margin-bottom: 1em;
+}
+.name{
+    margin-top: 4rem;
+    font-family:"Fraunces", serif; 
+    font-weight: 900; 
+    font-size: 24px;;
+}
+.job{
+    margin-top: -10px;
+}
 .overlay{
     display: grid;
     grid-template-columns: 1fr 1fr;

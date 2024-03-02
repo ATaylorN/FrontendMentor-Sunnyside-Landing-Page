@@ -26,11 +26,17 @@
       <li ><a href="#">About</a></li>
       <li ><a href="#">Services</a></li>
       <li ><a href="#">Projects</a></li>
-      <li ><a href="#">Contact</a></li>
+      <li ><a class="active" href="#">CONTACT</a></li>
     </ul>
   </nav>
 
-  <img class="headerImg" src="./images/desktop/image-header.jpg">
+  <!-- <img class="headerImg" src="./images/desktop/image-header.jpg"> -->
+
+  <picture>
+    <source srcset="./images/mobile/image-header.jpg" media="(max-width: 800px)">
+    <source srcset="./images/desktop/image-header.jpg">
+    <img src="./images/desktop/image-header.jpg" alt="">
+  </picture>
 
   <header>
     <h1>WE ARE CREATIVES</h1>
@@ -46,6 +52,7 @@
     <p class="description">We are a full-service creative agency specializing in helping brands grow fast. 
     Engage your clients through compelling visuals that do most of the marketing for you.</p>
     <button class="btn">LEARN MORE</button>
+    <div class="underline"></div>
   </div>
   </section>  
 
@@ -58,6 +65,7 @@
   <p>Using a collaborative formula of designers, researchers, photographers, videographers, and copywriters, 
     we’ll build and extend your brand in digital places.</p> 
   <button class="btn">LEARN MORE</button>
+  <div class="underline2"></div>
 </div>
 </section>
 
@@ -68,7 +76,7 @@
 
 <section class="overlay">
   <div class="design">
-  <h3>Graphic design</h3>
+  <h3>Graphic Design</h3>
   <p>Great design makes you memorable. We deliver artwork that underscores your 
   brand message and captures potential clients’ attention.</p>
 </div>
@@ -79,27 +87,27 @@
 </section>
 
 <section class="client">
-  <h3>CLIENT TESTIMONIALS</h3>
+  <h4>CLIENT TESTIMONIALS</h4>
 
   <div class="reviewsgroup">
   <aside class="review">
     <img src="./images/image-emily.jpg" alt="">
     <p>We put our trust in Sunnyside and they delivered, making sure our needs were met and deadlines were always hit.</p>
-    <p class="name"><b>Emily R.</b></p>
+    <p class="name">Emily R.</p>
     <p class="job">Marketing Director</p>
   </aside>
 
   <aside class="review">
     <img src="./images/image-thomas.jpg" alt="">
     <p>Sunnyside’s enthusiasm coupled with their keen interest in our brand’s success made it a satisfying and enjoyable experience.</p>
-    <p class="name"><b>Thomas S.</b></p>
+    <p class="name">Thomas S.</p>
     <p class="job">Chief Operating Officer</p>
 </aside>
 
   <aside class="review">
     <img src="./images/image-jennie.jpg" alt="">
     <p>Incredible end result! Our sales increased over 400% when we worked with Sunnyside. Highly recommended!</p>
-    <p class="name"><b>Jennie F.</b></p>
+    <p class="name">Jennie F.</p>
     <p class="job">Business Owner</p>
 </aside>
 </div>
@@ -134,7 +142,7 @@
 
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
+    Coded by <a href="https://github.com/ATaylorN">Amanda Taylor</a>.
   </div>
 
 </body>

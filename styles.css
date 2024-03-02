@@ -18,6 +18,9 @@
     margin: 3em 0;
     gap: 50px;
 }
+.review:nth-child(2){
+    color: hsl(213, 9%, 39%)
+}
 .review p{
     max-width: 35ch;
 }
@@ -30,10 +33,12 @@
     margin-top: 4rem;
     font-family:"Fraunces", serif; 
     font-weight: 900; 
-    font-size: 24px;;
+    font-size: 24px;
+    color: hsl(212, 27%, 19%);
 }
 .job{
     margin-top: -10px;
+    color: hsl(210, 4%, 67%);
 }
 .overlay{
     display: grid;
@@ -49,11 +54,17 @@
     flex-direction: column;
     justify-self: center;
 }
+.design p, .design h3{
+    color: hsl(167, 40%, 24%);
+}
 .photo {
     grid-area: photo;
     display: flex;
     flex-direction: column;
     justify-self: center;
+}
+.photo p, .photo h3{
+    color: hsl(198, 62%, 26%);
 }
 .combined{
    display: grid;
@@ -75,7 +86,6 @@
 .combined img{
     width: 50vw;
 }
-
 .audience{
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -92,7 +102,7 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-areas: "text image"; 
-    margin-top: -10px;
+    margin-top: -5px;
 }
 .right{
     grid-area: image;
@@ -119,8 +129,30 @@
     font-weight: 700;
     font-size: 20px;
     border: none;
-    background-color: white;
+    background-color: rgba(255, 255, 255, 0);
     max-width: 160px;
+    z-index: 1;
+    color: hsl(212, 27%, 19%)
+}
+.underline{
+    width: 165px;
+    height: 15px;
+    background-color:hsl(51, 100%, 49%);
+    opacity: 30%;
+    border-radius: 20px;
+    margin-top: -12px;
+}
+.underline2{
+    width: 165px;
+    height: 15px;
+    background-color:hsl(7, 99%, 70%);
+    opacity: 30%;
+    border-radius: 20px;
+    margin-top: -12px;
+}
+.btn, .underline:hover, .underline2:hover{
+    opacity: 100%;
+    cursor: pointer;
 }
 .headerImg {
     position: relative;
@@ -150,7 +182,8 @@ footer{
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 80px 0;
+    padding-top: 80px;
+    padding-bottom: 60px;
 }
 footer nav{
     margin: 0;
@@ -162,15 +195,27 @@ footer nav{
     margin-bottom: 1em;
 }
 .secondNav ul li a{
-    padding: 1em;
+    padding: 0.5em;
+    margin: 0;
+}
+.secondNav ul li a:hover{
+    filter: saturate(10%) brightness(400%);
 }
 footer nav ul li a{
     display: block;
     text-decoration: none;
-    padding: 2em;
     line-height: 3em;
     color: hsl(168, 34%, 41%);
     font-family: "Barlow", sans-serif; font-family: 600;
+    padding: 1em;
+    font-weight: 600;
+}
+footer nav ul li a:hover{
+    color: white;
+}
+footer nav ul li{
+    display: inline-block;
+    list-style-type: none;
 }
 .headerNav{
     background-color: hsl(201, 99%, 64%);
@@ -183,14 +228,15 @@ footer nav ul li a{
     padding: 0;
     align-items: center;
 }
-.headerNav ul li, footer nav ul li{
+.headerNav ul li{
     display: inline-block;
     list-style-type: none;
+    margin-right: 4em;
 }
 .headerNav ul li a{
     display: block;
     text-decoration: none;
-    padding: 1em 2em;
+    padding: 1em 0;
     line-height: 3em;
     color: white;
     font-family: "Barlow", sans-serif; font-family: 600;
@@ -201,7 +247,34 @@ footer nav ul li a{
 .headerNav img {
     padding-left: 2em;
 }
+.attribution{
+    padding: 1em;
+}
+.headerNav li a.active{
+    background-color: white;
+    color: black;
+    font-family: "Fraunces", serif; 
+    font-weight: 900;
+    border-radius: 40px;
+    padding: 0 2em;
+}
+.headerNav li a.active:hover{
+    background-color: rgba(255, 255, 255, 0.253);
+    color: white;
+}
 h1{font-family: "Fraunces", serif; font-weight: 700; font-size: 90px; margin-bottom: 1.5em; color: white; letter-spacing: 0.1em;}
-h2{font-family: "Fraunces", serif; font-weight: 900; font-size: 50px;}
+h2{font-family: "Fraunces", serif; font-weight: 900; font-size: 50px; color: hsl(212, 27%, 19%)}
 h3{font-family: "Fraunces", serif; font-weight: 900; font-size: 30px;}
-p{font-family: "Barlow", sans-serif; font-weight: 600; font-size: 18px; line-height: 1.5em;}
+h4{font-family: "Fraunces", serif; font-weight: 900; font-size: 24px; letter-spacing: 0.2em; color: hsl(210, 4%, 67%)}
+p{font-family: "Barlow", sans-serif; font-weight: 600; font-size: 18px; line-height: 1.5em; color: hsl(232, 10%, 55%)}
+
+@media  screen and (max-width: 400px) {
+    h1{font-size: 40px;}
+    h2{font-size: 20px;}
+    h3{font-size: 18px;}
+    h4{font-size: 18px;}
+    header {
+        top: 15%;
+    }
+  
+}

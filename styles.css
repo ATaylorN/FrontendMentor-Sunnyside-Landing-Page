@@ -1,3 +1,44 @@
+.overlay{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "design photo";
+    text-align: center;
+    margin-top: -300px;
+    margin-bottom: 200px;
+}
+.design{
+    grid-area: design;
+    display: flex;
+    flex-direction: column;
+    justify-self: center;
+}
+.photo {
+    grid-area: photo;
+    display: flex;
+    flex-direction: column;
+    justify-self: center;
+}
+.combined{
+   display: grid;
+   grid-template-columns: 1fr 1fr;
+   grid-template-areas: "left right";
+   margin-top: -5px;
+}
+.design p, .photo p{
+    max-width: 38ch;
+    margin-bottom: 2em;
+    text-align: center;
+}
+.cherries{
+    grid-area: left;
+}
+.orange{
+    grid-area: right;
+}
+.combined img{
+    width: 50vw;
+}
+
 .audience{
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -98,4 +139,5 @@ nav img {
 }
 h1{font-family: "Fraunces", serif; font-weight: 700; font-size: 90px; margin-bottom: 1.5em; color: white; letter-spacing: 0.1em;}
 h2{font-family: "Fraunces", serif; font-weight: 900; font-size: 50px;}
+h3{font-family: "Fraunces", serif; font-weight: 900; font-size: 30px;}
 p{font-family: "Barlow", sans-serif; font-weight: 600; font-size: 18px; line-height: 1.5em;}
